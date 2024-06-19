@@ -1,0 +1,23 @@
+{
+    "name": "meishiedu/utils",
+    "version": "1.0.0",
+    "description": "美世教育工具库",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Utils\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wuzhaohui"
+        }
+    ],
+    "require": {
+        "php": ">=8.3.0",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "firebase/php-jwt": "^6.10"
+    }
+}
