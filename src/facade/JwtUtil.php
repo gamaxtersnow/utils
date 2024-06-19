@@ -16,7 +16,7 @@ use think\Facade;
 class JwtUtil extends Facade {
     protected static function getFacadeClass(): string
     {
-        return \Meishiedu\Utils\JwtUtil::class;
+        return \Utils\JwtUtil::class;
     }
 }
 
