@@ -32,6 +32,7 @@ use think\Facade;
  * @method static getDate(int $timestamp):string
  * @method static getTime(int $timestamp):string
  * @method static getTimestamp(string $date):int
+ * @method static compareTimestampWithCurrent($timestamp): int
  */
 class TimeUtil extends Facade {
     protected static function getFacadeClass(): string

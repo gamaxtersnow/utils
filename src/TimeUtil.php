@@ -134,4 +134,16 @@ class TimeUtil {
     public function getTimestamp(string $date):int {
         return strtotime($date);
     }
+    function compareTimestampWithCurrent($timestamp): int
+    {
+        $currentTimestamp = time();
+
+        if ($timestamp > $currentTimestamp) {
+            return 1;
+        } elseif ($timestamp < $currentTimestamp) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
 }
