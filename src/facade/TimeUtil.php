@@ -20,6 +20,7 @@ use think\Facade;
  * @method static getCurrentTimeSecond(): string
  * @method static getCurrentDate(): string
  * @method static getCurrentTime():string
+ * @method static getCurrentTimestamp():int
  * @method static formatDate(string $format, string|int|null $time = null): string
  * @method static addDays(int|string $date, int $days, string $format = 'Y-m-d'): ?string
  * @method static getCurrentDay(): int
