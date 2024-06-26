@@ -10,6 +10,7 @@ use think\Facade;
  * @package app\facade
  * @mixin FileUtil
  * @method static getFileExt(string $filename): array|string
+ * @method static getQwMediaIdsByJson(string $json): array
  */
 class FileUtil extends Facade {
     protected static function getFacadeClass(): string
