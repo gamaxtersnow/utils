@@ -19,10 +19,10 @@ class FileUtil{
         $res = [];
         foreach ($arr as $value) {
             if (is_array($value)) {
-                return  $res + $this->_getQwMediaIds($value);
+                $res += $this->_getQwMediaIds($value);
             }
-            if(str_contains($value,'WWME_')){
-                $res[] = $res;
+            if (str_starts_with($value, 'WWME_')) {
+                $res[] = $value;
             }
         }
         return $res;
