@@ -19,7 +19,8 @@ class FileUtil{
         $res = [];
         foreach ($arr as $value) {
             if (is_array($value)) {
-                $res += $this->_getQwMediaIds($value);
+                $res = array_merge($this->_getQwMediaIds($value));
+                continue;
             }
             if (str_starts_with($value, 'WWME_')) {
                 $res[] = $value;
